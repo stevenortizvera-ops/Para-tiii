@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e1e7">
+  <meta name="description" content="Una pequeña historia para Nicolle, de Steven.">
+  <title>Para Nicolle · De Steven</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300,0,1;9..144,400,0,1;9..144,500,0,1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="loading" id="loading" aria-hidden="true"><span>Para Nicolle</span><small>Preparando algo para ti…</small></div>
+  <main>
+    <section class="welcome" id="inicio" aria-labelledby="welcome-title">
+      <div class="brand">S <span class="brand-amp">&</span> N</div>
+      <div class="welcome-center">
+        <div class="gift-card reveal">
+          <span class="eyebrow">TIENES UN REGALO</span>
+          <span class="ornament" aria-hidden="true">✳</span>
+          <span class="eyebrow">PARA</span>
+          <h1 id="welcome-title">Nicolle</h1>
+          <div class="thin-rule"></div>
+          <p class="from">De Steven <span aria-hidden="true">♥</span></p>
+          <p class="intro">Quería hacerte algo que pudieras guardar y volver a ver cuando quieras. Un pedacito de nosotros.</p>
+        </div>
+        <p class="invitation">Toca el corazón para descubrir tu regalo</p>
+        <button type="button" class="heart-button" id="openGift" aria-label="Descubrir el regalo"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41 7.3 24.5C-1 15.9 12 2.8 21 11.3l3 3 3-3c9-8.5 22 4.6 13.7 13.2L24 41Z"/></svg></button>
+      </div>
+      <span class="welcome-foot">HECHO CON CARIÑO PARA TI · 2026</span>
+    </section>
+
+    <section class="hero-photo" id="historia" aria-label="Nuestra historia">
+      <img id="heroImage" src="assets/foto1.png" alt="Steven y Nicolle" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-caption reveal"><span class="eyebrow light">ESTA HISTORIA ES PARA</span><h2>Nicolle</h2><div class="hero-rule"></div><p>Steven <i>&</i> Nicolle</p><small>Una historia que seguimos escribiendo.</small></div>
+      <div class="photo-note">Un lugar para nuestra foto favorita</div>
+    </section>
+
+    <section class="section music-section" id="cancion" aria-labelledby="music-title">
+      <span class="eyebrow reveal">01 / NUESTRA CANCIÓN</span>
+      <h2 class="section-title reveal" id="music-title">La música también<br><em>guarda recuerdos.</em></h2>
+      <div class="record-wrap reveal"><div class="record" id="record"><img src="assets/lirios.png" alt="Lirios blancos, portada provisional" loading="lazy"><button type="button" id="musicButton" class="record-control" aria-label="Reproducir canción"><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg></button></div></div>
+      <p class="music-name reveal">Wonderwall · Oasis</p>
+      <p class="muted reveal" id="songMessage">Hay canciones que terminan teniendo el nombre de una persona.</p>
+      <div id="spotifySlot" class="spotify-slot" hidden></div>
+      <audio id="musicAudio" preload="none"></audio>
+    </section>
+
+    <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <span class="eyebrow reveal">02 / GALERÍA</span><h2 class="section-title reveal" id="gallery-title">Momentos que<br><em>no se borran.</em></h2>
+      <div class="gallery-shell reveal">
+        <div class="gallery-count"><span id="galleryCurrent">01</span><span class="count-line"></span><span id="galleryTotal">06</span></div>
+        <div id="galleryTrack" class="gallery-track" tabindex="0" aria-label="Galería de recuerdos" role="region"></div>
+        <div class="gallery-nav"><button id="galleryPrev" class="nav-arrow" type="button" aria-label="Foto anterior">←</button><div id="galleryDots" class="gallery-dots" aria-label="Posición en la galería"></div><button id="galleryNext" class="nav-arrow" type="button" aria-label="Foto siguiente">→</button></div>
+      </div>
+      <p class="section-after">Seis espacios para los recuerdos que más nos gustan.</p>
+    </section>
+
+    <section class="section letter-section" id="carta" aria-labelledby="letter-title"><span class="eyebrow reveal">03 / UNA CARTA PARA TI</span><div class="letter reveal"><div class="letter-top"><span class="letter-mark">S <i>&</i> N</span><span>PARA NICOLLE</span></div><h2 id="letter-title">Hola, mi amor:</h2>
+      <div class="letter-body"><p>Si estás leyendo esto, es porque quería hacerte algo un poquito diferente. Algo a lo que pudieras volver cuando quisieras recordar lo bonito que hemos vivido.</p><p>Nicolle, nuestra historia tiene momentos felices y también momentos de los que hemos aprendido. Por eso valoro cada vez que nos damos la oportunidad de escucharnos, cuidarnos y seguir construyendo algo juntos.</p><p>Guardo nuestras salidas, nuestras conversaciones y esas pequeñas cosas que quizás para los demás pasarían desapercibidas. Estar contigo hace que muchos días normales se conviertan en recuerdos especiales.</p><p>Quiero seguir demostrándote lo que siento con hechos, seguir aprendiendo contigo y hacer espacio para muchos recuerdos más. Gracias por los momentos que ya forman parte de nuestra historia.</p><p>Te amo.</p></div><p class="signature">Steven <span aria-hidden="true">♥</span></p></div></section>
+
+    <section class="section timeline-section" id="recuerdos" aria-labelledby="timeline-title"><span class="eyebrow reveal">04 / RECUERDOS</span><h2 class="section-title reveal" id="timeline-title">Nuestra línea<br><em>del tiempo.</em></h2><div class="days-card reveal"><span class="days-number" id="daysCount">♡</span><span class="days-label" id="daysLabel">NUESTRA HISTORIA</span><small id="daysSince">Cada día suma algo nuevo.</small></div><div class="timeline" id="timeline"></div></section>
+
+    <section class="section voice-section" id="voz" aria-labelledby="voice-title"><span class="eyebrow reveal">05 / MENSAJE DE VOZ</span><h2 class="section-title reveal" id="voice-title">Para cuando quieras<br><em>escucharme cerca.</em></h2><div class="voice-card reveal"><div class="voice-heading"><div class="voice-monogram">S</div><div><strong>De Steven</strong><span id="voiceStatus">Un mensaje para ti</span></div></div><div class="waveform" id="waveform" aria-hidden="true"></div><div class="voice-controls"><button type="button" id="voiceButton" class="voice-play" aria-label="Reproducir mensaje de voz">▶</button><div class="progress-area"><input type="range" id="voiceProgress" min="0" max="100" value="0" aria-label="Avanzar mensaje de voz"><div class="timestamps"><span id="voiceCurrent">0:00</span><span id="voiceDuration">0:00</span></div></div></div></div><audio id="voiceAudio" preload="metadata"></audio></section>
+
+    <section class="end-photo" id="final" aria-labelledby="end-title"><img id="endImage" src="assets/foto2.png" alt="Steven y Nicolle" loading="lazy"><div class="end-shade"></div><div class="end-message reveal"><span class="eyebrow light">Y SIEMPRE VOLVERÍA A ELEGIRTE</span><span class="end-heart" aria-hidden="true">♥</span><h2 id="end-title">Steven <i>&</i> Nicolle</h2><p>Te amo, hoy y siempre.</p><span class="end-signature">— Steven</span></div><div class="float-hearts" aria-hidden="true"><span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span></div></section>
+  </main>
+  <button type="button" class="secret-trigger" id="secretTrigger" aria-label="Descubrir un secreto">✳</button>
+  <dialog id="secretDialog"><div class="secret-content"><span class="secret-flower">✳</span><h2>Encontraste un secreto ♡</h2><p>Entre todas las personas que podría haber conocido, me alegra muchísimo que nuestra historia sea esta.</p><button type="button" id="closeSecret">Cerrar</button></div></dialog>
+</body>
+</html>
